@@ -1,0 +1,83 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 32%;
+}
+
+
+.card-body {
+  background-color: white;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #B3B3B3;
+  position: relative;
+}
+
+.card-picture {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-likes {
+  color: #B3B3B3;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-likes li {
+  padding: 0 10px;
+}
+
+.card-likes i {
+  padding-right: 5px;
+}
+
+.card-footer {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.card-footer a {
+  color: white;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+
+.card-hover {
+  opacity: 0;
+  background-color: white;
+  transition: opacity 0.4s ease;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 38px;
+}
+
+.card-hover h4 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.card-hover p {
+  font-weight: lighter;
+  color: #AAAAAA;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.card-picture:hover .card-hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
